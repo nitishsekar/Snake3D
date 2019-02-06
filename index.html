@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<style>
+    #wrap{
+		position:relative;
+		width: 34%;
+		margin: 0 auto;
+		
+	}
+	#myImageCanvas,#myWebGLCanvas{
+		position:absolute; top:120px; left:0px;
+		
+	}
+	#Score{
+		position:absolute;
+		top:40px;
+		left:40px;
+		color: gray;
+		font-family: "Lucida Console";
+	}
+	#Scorev{
+		position:absolute;
+		top:50px;
+		left:60px;
+		font-family: "Lucida Console";
+		color: #e6e6e6;
+	}
+	#HighScore{
+		position:absolute;
+		top:40px;
+		left:355px;
+		color: gray;
+		font-family: "Lucida Console";
+	}
+	#Highv{
+		position:absolute;
+		top:50px;
+		left:400px;
+		color: #e6e6e6;
+		font-family: "Lucida Console";
+	}
+
+	#name{
+		position:absolute;
+		top:40px;
+		left:205px;
+		color: gray;
+		font-size: 18px;
+		font-family: "Lucida Console";
+	}
+	#nit{
+		position:absolute;
+		top:50px;
+		left:205px;
+		font-size: 12px;
+		color: #e6e6e6;
+			font-family: "Lucida Console";
+	}
+	
+	</style>	
+    <meta charset="UTF-8">
+    <title>Prog 5: SNAKE!</title>
+    
+    <!-- <link type="text/css" rel="stylesheet" href="rasterize.css"> -->
+
+    <script type="text/javascript" src="gl-matrix-min.js"></script>
+    <script type="text/javascript" src="rasterize.js"></script>
+  </head>
+
+  <body bgcolor="black" onload="main()">
+  <div id="wrap">
+	<div id="scores">
+		 <strong id="Score">Score</strong>
+		 <strong id="name">Snake!</strong>
+		 <p id="nit">By Nitish</p>
+		 <strong id="HighScore">High Score</strong>
+		 <p id="Scorev">0</p>
+		 <p id="Highv">0</p>
+	 </div>
+	 
+     <canvas id="myImageCanvas" width="512" height="512"></canvas>
+	 <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+  </div>
+  
+  </body>
+</html>
